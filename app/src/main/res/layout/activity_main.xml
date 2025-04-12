@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Camera Preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!-- Server URL input -->
+        <EditText
+            android:id="@+id/urlEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/previewView"
+            android:layout_marginTop="16dp"
+            android:hint="Enter the listening URL (e.g., http://192.168.2.100/hear)"
+            android:inputType="textUri" />
+
+        <!-- Toggle Background Service -->
+        <ToggleButton
+            android:id="@+id/backgroundToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/urlEditText"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textOff="Enable Run in Background"
+            android:textOn="Disable Background" />
+
+        <!-- Start Streaming Button -->
+        <Button
+            android:id="@+id/streamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backgroundToggle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Start Streaming" />
+
+        <!-- Status Text -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/streamButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Status"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <!-- Compass direction -->
+        <TextView
+            android:id="@+id/directionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Current: 0°"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

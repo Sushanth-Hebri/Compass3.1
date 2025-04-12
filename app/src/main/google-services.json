@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "297395929587",
+    "firebase_url": "https://realtime-group-discussion-default-rtdb.firebaseio.com",
+    "project_id": "realtime-group-discussion",
+    "storage_bucket": "realtime-group-discussion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297395929587:android:d52aba4672f4e65b505286",
+        "android_client_info": {
+          "package_name": "com.example.compass3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297395929587-o0mqqardejsiueu2line9j9ad2vnv0a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo9XGCefURHrDtC3A-UrjjgM2fkiOWlBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297395929587-o0mqqardejsiueu2line9j9ad2vnv0a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
